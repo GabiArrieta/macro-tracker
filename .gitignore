@@ -1,10 +1,14 @@
 # Dependencies
 node_modules/
+client/node_modules/
+server/node_modules/
 package-lock.json
 
 # Build outputs
 dist/
 build/
+client/build/
+server/dist/
 
 # Environment files
 .env
@@ -12,9 +16,17 @@ build/
 .env.development.local
 .env.test.local
 .env.production.local
+client/.env
+server/.env
 
 # TOML files
 *.toml
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+server/database.db
 
 # IDE
 .vscode/
@@ -33,3 +45,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# Cache
+.cache/
+client/node_modules/.cache/
+
+# Temporary files
+*.tmp
+*.temp
